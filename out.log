@@ -1,0 +1,87 @@
+INFO:     Will watch for changes in these directories: ['/Users/fabricethenorlouis/Desktop/labsecure-ai-v2']
+INFO:     Uvicorn running on http://0.0.0.0:8000 (Press CTRL+C to quit)
+INFO:     Started reloader process [26954] using WatchFiles
+INFO:     Started server process [26993]
+INFO:     Waiting for application startup.
+2026-03-04 19:29:37 [INFO] backend.main: ============================================================
+2026-03-04 19:29:37 [INFO] backend.main:   LabSecure AI v2 — Starting Up
+2026-03-04 19:29:37 [INFO] backend.main: ============================================================
+2026-03-04 19:29:38 [INFO] backend.main: ✓ Firebase initialized
+2026-03-04 19:29:38 [INFO] backend.db.repositories: Event batch writer started
+2026-03-04 19:29:38 [INFO] backend.main: ✓ Event batch writer started
+2026-03-04 19:29:38 [INFO] backend.main: ✓ Access Controller initialized
+2026-03-04 19:29:38 [INFO] backend.main: ✓ Anomaly Detector initialized
+2026-03-04 19:29:38 [INFO] backend.services.camera_monitor: Camera health monitor started
+2026-03-04 19:29:38 [INFO] backend.main: ✓ Camera Monitor started
+
+> labsecure-ai-v2-frontend@2.0.0 dev
+> vite
+
+
+  VITE v6.4.1  ready in 233 ms
+
+  ➜  Local:   http://localhost:5173/
+  ➜  Network: use --host to expose
+  ➜  press h + enter to show help
+2026-03-04 19:29:38 [INFO] backend.vision.pipeline: Starting Vision Pipeline (multiprocessing mode)...
+2026-03-04 19:29:38 [INFO] backend.vision.camera: [cam_axis_01] Camera stream started: Axis P1447-LE
+2026-03-04 19:29:38 [INFO] backend.vision.pipeline: [cam_axis_01] Display thread started (10 FPS)
+2026-03-04 19:29:38 [INFO] backend.vision.pipeline: Vision Pipeline started with 1 cameras
+2026-03-04 19:29:38 [INFO] backend.main: ✓ Vision Pipeline started
+2026-03-04 19:29:38 [INFO] backend.main: ============================================================
+2026-03-04 19:29:38 [INFO] backend.main:   LabSecure AI v2 — Ready
+2026-03-04 19:29:38 [INFO] backend.main: ============================================================
+INFO:     Application startup complete.
+2026-03-04 19:29:39 [INFO] backend.vision.camera: [cam_axis_01] Connected to rtsp://root:admin12345$_@192.168.0.90:554/axis-media/media.amp
+/Users/fabricethenorlouis/Desktop/labsecure-ai-v2/.venv/lib/python3.11/site-packages/onnxruntime/capi/onnxruntime_inference_collection.py:115: UserWarning: Specified provider 'OpenVINOExecutionProvider' is not in available provider names.Available providers: 'CoreMLExecutionProvider, AzureExecutionProvider, CPUExecutionProvider'
+  warnings.warn(
+INFO:     152.166.15.63:0 - "GET /api/cameras/list HTTP/1.1" 200 OK
+INFO:     152.166.15.63:0 - "GET /api/emergency/status HTTP/1.1" 200 OK
+INFO:     152.166.15.63:0 - "GET /api/cameras/rfTYk8FvGbgtcwkQpg8M/snapshot HTTP/1.1" 200 OK
+INFO:     152.166.15.63:0 - "GET /api/cameras/rfTYk8FvGbgtcwkQpg8M/snapshot HTTP/1.1" 200 OK
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+2026-03-04 19:29:45 [INFO] backend.main: Shutting down LabSecure AI v2...
+2026-03-04 19:29:45 [INFO] backend.vision.pipeline: [cam_axis_01] Display thread stopped
+2026-03-04 19:29:45 [INFO] backend.vision.camera: [cam_axis_01] Camera stream stopped: Axis P1447-LE
+Applied providers: ['CPUExecutionProvider'], with options: {'CPUExecutionProvider': {}}
+find model: /Users/fabricethenorlouis/.insightface/models/buffalo_l/1k3d68.onnx landmark_3d_68 ['None', 3, 192, 192] 0.0 1.0
+Applied providers: ['CPUExecutionProvider'], with options: {'CPUExecutionProvider': {}}
+find model: /Users/fabricethenorlouis/.insightface/models/buffalo_l/2d106det.onnx landmark_2d_106 ['None', 3, 192, 192] 0.0 1.0
+Applied providers: ['CPUExecutionProvider'], with options: {'CPUExecutionProvider': {}}
+find model: /Users/fabricethenorlouis/.insightface/models/buffalo_l/det_10g.onnx detection [1, 3, '?', '?'] 127.5 128.0
+Applied providers: ['CPUExecutionProvider'], with options: {'CPUExecutionProvider': {}}
+find model: /Users/fabricethenorlouis/.insightface/models/buffalo_l/genderage.onnx genderage ['None', 3, 96, 96] 0.0 1.0
+Applied providers: ['CPUExecutionProvider'], with options: {'CPUExecutionProvider': {}}
+find model: /Users/fabricethenorlouis/.insightface/models/buffalo_l/w600k_r50.onnx recognition ['None', 3, 112, 112] 127.5 127.5
+set det-size: (320, 320)
+2026-03-04 19:29:46 [INFO] backend.vision.pipeline: Vision Pipeline stopped
+=======================================================
+  LabSecure AI v2 — Full-Stack Launcher
+=======================================================
+
+✓ Dependencies up to date
+
+   ✓ Cleared port 8000 (killed stale process)
+🏗️  Starting backend on http://localhost:8000
+🌐 Starting frontend on http://localhost:5173
+🚀 Starting ngrok tunnel...
+   ✓ Public URL: https://planklike-makenzie-setulose.ngrok-free.dev
+
+=======================================================
+  ✅ All services running!
+  Backend:  http://localhost:8000
+  Frontend: http://localhost:5173
+  Ngrok:    Check URL above ☝️
+
+  Press Ctrl+C to stop everything
+=======================================================
+
+
+🛑 Shutting down all services...
+👋 All services stopped. Goodbye!
+2026-03-04 19:29:56 [INFO] backend.services.camera_monitor: Camera health monitor stopped
+2026-03-04 19:29:58 [INFO] backend.main: ✓ Event batch writer stopped
+2026-03-04 19:29:58 [INFO] backend.main: Shutdown complete.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [26993]
